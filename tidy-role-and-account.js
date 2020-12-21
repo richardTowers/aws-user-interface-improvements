@@ -8,7 +8,10 @@
   if (!span || !span.title) { return }
 
   const [role, account] = span.title.split(' @ ')
-  const cleanRole = role.replace(/\/\d+/, '')
+  const cleanRole = role
+    .replace(/\/\d+/, '')
+    .replace('govuk-', '')
+    .replace(/administrators?/, 'admin')
   const cleanAccount = account.replace('-infrastructure', '')
   const textOverride = `${cleanRole} @ ${cleanAccount}`
 
