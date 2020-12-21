@@ -8,6 +8,11 @@ For example, if you sign in with a federated login, it will try to show you the
 important bits (like which role and account you're in) instead of the garbage AWS
 shows by default.
 
+|        | Screenshot |
+| ------ | ---------- |
+| Before | ![screenshot showing the AWS UI without the plugin](images/before.png) |
+| After  | ![screenshot showing the AWS UI with the plugin](images/after.png)     |
+
 Installation
 ------------
 
